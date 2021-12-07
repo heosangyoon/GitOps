@@ -22,7 +22,7 @@ pipeline {
     stage('deploy end') {
       steps {
         slackSend(message: """${env.JOB_NAME} #${env.BUILD_NUMBER} End
-        """, color: 'good', tokenCredentialId: 'slack-key')
+        """, color: 'good', tokenCredentialId: 'slack-noti-key')
       }
     }
   }
